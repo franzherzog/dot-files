@@ -1,4 +1,5 @@
 syntax enable
+
 set tabstop=4
 set softtabstop=4
 set expandtab 	" tabs are spaces
@@ -13,6 +14,7 @@ set incsearch		" search as characters are entered
 set hlsearch		" highlight matches
 
 let mapleader=","	" leader is comma
+
 
 " delete highlighting after search
 nnoremap <leader><space> :nohlsearch<CR>
@@ -35,6 +37,8 @@ inoremap jk <esc>
 " save session
 nnoremap <leader>s :mksession<CR>
 
+" nerdtree shortcut
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 " CtrlP Settings
 let g:ctrlp_match_window = 'bottom,order:ttp'
@@ -44,8 +48,9 @@ let g:ctrlp_working_path_mode = 0
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'sjl/gundo.vim' 
+" Plug 'sjl/gundo.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'altercation/vim-colors-solarized'
 
 " Using git URL
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
