@@ -3,6 +3,7 @@ syntax enable
 set tabstop=4
 set softtabstop=4
 set expandtab 	" tabs are spaces
+set backspace=2 " make backspace work like most other apps
 
 set number	" show line numbers
 set showcmd	" show command in bottom bar
@@ -14,7 +15,7 @@ set incsearch		" search as characters are entered
 set hlsearch		" highlight matches
 
 let mapleader=","	" leader is comma
-
+set background=dark
 
 " delete highlighting after search
 nnoremap <leader><space> :nohlsearch<CR>
@@ -40,6 +41,12 @@ nnoremap <leader>s :mksession<CR>
 " nerdtree shortcut
 nnoremap <leader>n :NERDTreeToggle<CR>
 
+" switch window rempa
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
+map <C-h> <C-W>h
+
 " CtrlP Settings
 let g:ctrlp_match_window = 'bottom,order:ttp'
 let g:ctrlp_switch_buffer = 0
@@ -54,6 +61,21 @@ Plug 'altercation/vim-colors-solarized'
 
 " Using git URL
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Git Nerdtree Plugin
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "?",
+    \ "Staged"    : "?",
+    \ "Untracked" : "?",
+    \ "Renamed"   : "?",
+    \ "Unmerged"  : "-",
+    \ "Deleted"   : "?",
+    \ "Dirty"     : "?",
+    \ "Clean"     : "??",
+    \ "Unknown"   : "?"
+    \ }
 
 " Using a non-master branch
 "Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
