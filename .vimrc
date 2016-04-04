@@ -1,3 +1,5 @@
+" Install Plugin Installer ( most of the time with :PlugInstall ) 
+" https://github.com/junegunn/vim-plug
 syntax enable
 
 set tabstop=4
