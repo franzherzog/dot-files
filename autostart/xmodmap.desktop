@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/bin/bash -c "sleep 5;/usr/bin/xmodmap -e 'keycode  66 = BackSpace BackSpace BackSpace NoSymbol BackSpace'" 
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=remap_capslock
+Name=return_remap
+Comment[en_US]=
+Comment=

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/bin/bash -c "sleep 5;/usr/bin/xmodmap -e 'keycode  65 = space Return space NoSymbol space'" 
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=remap_shiftspace
+Comment=
